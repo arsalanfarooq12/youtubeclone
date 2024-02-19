@@ -1,38 +1,214 @@
-.App {
-  text-align: center;
+.whole {
+
+    display: grid;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navigation {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav1 {
+    /* menubars */
+    height: 1.5rem;
+    width: 2rem;
+    margin-left: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav2 {
+    /* logo */
+    color: white;
+    font-size: large;
+    font-weight: 700;
+    display: flex;
+    margin-left: 2rem;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+/* search bar */
+.nav3 {
+    border: none;
+    /* width: 35rem;
+    height: 2.6rem;
+    margin-left: 6rem;
+    border: 2px solid white;
+    border-radius: 50px; */
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav3 input {
+    margin-left: 7rem;
+
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    height: 2rem;
+    width: 35rem;
+    border: 1px solid white;
+}
+
+.nav3 :active {
+    border: 1px solid #3ea6ff;
+}
+
+/* search icon */
+.nav4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    height: 34px;
+    width: 4rem;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.mic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.6rem;
+    width: 2.6rem;
+
+    margin-left: 1rem;
+    border: 1px solid white;
+    border-radius: 50%;
+
+}
+
+.bellicon {
+
+    margin-left: 15rem;
+}
+
+.profile {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-left: 3rem;
+    color: #3ea6ff;
+    width: 6rem;
+    height: 2rem;
+}
+
+
+
+/* sidepanel */
+
+.sidepanel {
+    margin-top: 1rem;
+    height: 37rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* border: 2px solid red; */
+    overflow-y: scroll;
+    font-size: small;
+    color: white;
+
+
+
+    .sidepanel-item {
+        /* border: 1px solid blue; */
+
+        width: 8rem;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+
+
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+
+
+}
+
+.sidepanel-item:hover {
+    background-color: rgb(108, 106, 106);
+}
+
+/*  custom scroll bar */
+/* width */
+.sidepanel::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+.sidepanel::-webkit-scrollbar-track {
+    background: rgb(18, 17, 17);
+}
+
+/* Handle */
+.sidepanel::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+.sidepanel::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* footer */
+.foot {
+    margin-left: 1rem;
+}
+
+#copyright {
+    font-size: smaller;
+    color: #555;
+    font-weight: 500;
+}
+
+.middle {
+    
+    display: flex;
+}
+
+/* content section */
+.content { 
+    display: grid;
+   grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    color: white;
+    margin-left: 2rem;
+
+    height: 92.25vh;
+    width: 70rem;
+    overflow-y: scroll;
+}
+
+
+/*  custom scroll bar for content area */
+/* width */
+.content::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+.content::-webkit-scrollbar-track {
+    background: rgb(18, 17, 17);
+}
+
+/* Handle */
+.content::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+.content::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
